@@ -14,7 +14,7 @@ public class MyService {
         try {
             lock.lock();
             System.out.println(Thread.currentThread().getName()+" awaits, "+System.currentTimeMillis());
-            condition.await();
+            condition.await();  //当前线程await, 并且会释放锁, 进入ready队列
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
