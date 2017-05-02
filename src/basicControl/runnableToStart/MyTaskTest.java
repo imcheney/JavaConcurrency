@@ -1,8 +1,10 @@
-package basicControl.concurrent;
+package basicControl.runnableToStart;
 
 /**
  * sina的笔试题
  * 如何实现1000个线程, 每个耗时0.2秒, 但是总体在1秒内完成所有任务.
+ * 用一个myTask
+ * 用循环初始化1000个new Thread(myTask)
  * Created by Chen on 23/04/2017.
  */
 public class MyTaskTest {
